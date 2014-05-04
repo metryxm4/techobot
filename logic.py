@@ -118,7 +118,7 @@ def register (r):
     if db_controller is 'sqlite':
         db = sqlite.connect('techobot.db')
     elif db_controller is 'mysql':
-        db = mysql.connect(host=db_details['user'], user=db_details['user'], passwd=db_details['password'], db=db_details['database'])
+        db = mysql.connect(host=db_details['host'], user=db_details['user'], passwd=db_details['password'], db=db_details['database'])
     
     cursor = db.cursor()
     
