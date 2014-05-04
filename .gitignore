@@ -1,0 +1,6 @@
+*.db
+db_settings.py
+reddit_settings.py
+techobot.lockfile
+*.pyc
+*/*.pyc
