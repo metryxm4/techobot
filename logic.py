@@ -54,6 +54,8 @@ def register (r):
                 
                 command = imp.load_source(module[:-3], 'commands/' + module)
                 r.commands.append(command)
+            
+            commands.sort(key=lambda command: command.weight)
         
         def console_log (r, message, level=1):
             if level <= debug_level:

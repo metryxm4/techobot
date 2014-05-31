@@ -4,6 +4,9 @@ import re
 import math
 import pprint
 
+# Weight for sorting
+weight = 1
+
 ADMIN_FUNDS_LIMIT = 500
 trigger = re.compile(u'(?:\W|^)\+(\d+) +(?:limon|lemon|techo(?:d(?:o|ó))?lar)(?:e?s)?(?:\W|$)', re.I)
 subject = re.compile(u'^balance$', re.I)

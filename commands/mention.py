@@ -3,6 +3,9 @@
 import re
 import random
 
+# Weight for sorting
+weight = 2
+
 trigger = re.compile(u'(\W|^)/u/techobot(\W|$)',re.I)
 responses = (u'¿Qué, qué, yo qué?', u'Me zumbaron los oídos.', u'[Dime](/extrapalapaquetl)')
 

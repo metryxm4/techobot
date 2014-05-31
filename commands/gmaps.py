@@ -4,6 +4,9 @@ import re
 import urllib
 import json
 
+# Weight for sorting
+weight = 3
+
 subject = re.compile(u'^estoy en$', re.I)
 message = u'\n\n----\n### Techoblanqueños en el mapa\n\n----\n^\[[ubicación](/message/compose/?to=techobot&subject=estoy+en&message=ciudad,+estado,+país)\]'
 
