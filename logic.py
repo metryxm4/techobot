@@ -40,7 +40,7 @@ def register (r):
         
         def load_done_list (r):
             r.done = []
-            r.cursor.execute('SELECT comment_id FROM replies')
+            r.cursor.execute('SELECT comment_id FROM replies LIMIT 2000')
             
             for each in r.cursor.fetchall():
                 r.done.append(each[0])
